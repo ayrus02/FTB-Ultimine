@@ -16,6 +16,7 @@
 	"ftbultimine.shape.mining_tunnel": "Terowongan Tambang (arah bawah)",
 	"ftbultimine.shape.escape_tunnel": "Terowongan Keluar (arah atas)",
 	"ftbultimine.shape.flat_3x6": "Datar 3x6 blok",
+	"ftbultimine.shape.flat_5x6": "Datar 5x6 blok",
 	"ftbultimine.config": "Konfigurasi FTB Ultimine",
 	"item.ftbultimine.ultiminer": "Ultiminer",
 	"item.ftbultimine.ultiminer.tooltip": "Dapat menggunakan %s ketika aktif",
