@@ -17,6 +17,8 @@
 	"ftbultimine.shape.escape_tunnel": "Escape Tunnel",
 	"ftbultimine.shape.flat_3x6": "Flat (3x6)",
 	"ftbultimine.shape.flat_5x6": "Flat (5x6)",
+	"ftbultimine.shape.flat_3": "Flat (3)",
+	"ftbultimine.shape.flat_5": "Flat (5)",
 	"ftbultimine.config": "FTB Ultimine Configuration",
 	"item.ftbultimine.ultiminer": "Ultiminer",
 	"item.ftbultimine.ultiminer.tooltip": "Enables the use of %s when active",

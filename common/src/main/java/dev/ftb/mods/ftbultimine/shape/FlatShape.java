@@ -19,7 +19,7 @@ public class FlatShape implements Shape {
         int list_size = maxDepth() * maxWidth();
         if (list_size > context.maxBlocks())
             list_size = context.maxBlocks();
-        
+
         List<BlockPos> list = new ArrayList<>(list_size);
 
         BlockPos basePos = context.pos();
