@@ -66,6 +66,7 @@ public class FTBUltimine {
 	private boolean isBreakingBlock;
 	private int tempBlockDroppedXp;
 	private ItemCollection tempBlockDropsList;
+	private Player uncachedPlayer = null;
 
 	public static final TagKey<Item> DENY_TAG = TagKey.create(Registries.ITEM, FTBUltimine.rl("excluded_tools"));
 	public static final TagKey<Item> STRICT_DENY_TAG = TagKey.create(Registries.ITEM, FTBUltimine.rl("excluded_tools/strict"));
@@ -334,6 +335,7 @@ public class FTBUltimine {
 			FTBUltiminePlayerData data = getOrCreatePlayerData(player);
 			data.checkBlocks(serverPlayer, true, FTBUltimineServerConfig.getMaxBlocks(serverPlayer));
 			data.takePendingXP(serverPlayer);
+			uncachedPlayer = player;
 		}
 	}
 
@@ -372,4 +374,10 @@ public class FTBUltimine {
 			BlockMatcher.TagCache.onReload();
 		}
 	}
+
+	public Player getUncachedPlayer()
+	{
+		return uncachedPlayer;
+	}
+
 }
