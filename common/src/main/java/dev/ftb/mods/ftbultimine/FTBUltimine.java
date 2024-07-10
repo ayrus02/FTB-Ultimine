@@ -380,4 +380,31 @@ public class FTBUltimine {
 		return uncachedPlayer;
 	}
 
+	protected double getRotation(float the_degree)
+	{
+		double rotation = (the_degree - 180) % 360;
+		if (rotation < 0) {
+			rotation += 360.0;
+		}
+		return rotation ;
+	}
+
+	public String getCardinalDirection(Direction face)
+	{
+		double rotation = getRotation(face.toYRot());
+
+		if (0 <= rotation && rotation < 45) {
+			return "NORTH";
+		} else if (45 <= rotation && rotation < 135) {
+			return "EAST";
+		} else if (135 <= rotation && rotation < 225) {
+			return "SOUTH";
+		} else if (225 <= rotation && rotation < 315) {
+			return "WEST";
+		} else if (315 <= rotation && rotation < 360.0) {
+			return "NORTH";
+		} else {
+			return null;
+		}
+	}
 }
