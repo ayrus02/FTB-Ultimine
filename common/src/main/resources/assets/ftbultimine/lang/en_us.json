@@ -15,6 +15,7 @@
 	"ftbultimine.shape.small_square": "Small Square (3x3)",
 	"ftbultimine.shape.mining_tunnel": "Mining Tunnel",
 	"ftbultimine.shape.escape_tunnel": "Escape Tunnel",
+	"ftbultimine.shape.flat_3x6": "Flat (3x6)",
 	"ftbultimine.config": "FTB Ultimine Configuration",
 	"item.ftbultimine.ultiminer": "Ultiminer",
 	"item.ftbultimine.ultiminer.tooltip": "Enables the use of %s when active",
